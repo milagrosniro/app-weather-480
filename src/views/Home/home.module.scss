@@ -1,0 +1,24 @@
+.title{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+    margin-left: 15rem; 
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+@media (min-width: 768px){
+    .container{
+        display: grid;
+        align-items: center;
+        gap: 4rem;
+        margin-top: 5rem;
+    }
+}
+
+

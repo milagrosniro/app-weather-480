@@ -1,0 +1,44 @@
+@use '../../styles/variables.scss' as *;
+
+.container{
+    @include flex-direction(row,center,center);
+    color: $primary-color;
+    border-radius: 1rem;
+    border: 2px solid $light-gray;
+    padding: 1rem;
+    align-self: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.current{
+    font-weight: $font-weight-bold-xl;
+    font-size: 6rem;
+    margin: 0;
+}
+
+.temperatures{
+    @include flex-direction(row, center);
+    gap: 5rem;
+}
+
+.temperatures p{
+    font-weight: $font-weight-bold-xl;
+}
+
+.temperatures span{
+    font-weight: $font-weight-s;
+}
+
+.containerImg{
+    @include flex-direction(row, center,center);
+    width: 90%;
+}
+
+@media (max-width:1000px ){
+    .container{
+        @include flex-direction(column);
+        gap: 2rem;
+    }
+  
+}

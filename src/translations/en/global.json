@@ -1,0 +1,43 @@
+{
+    "form": {
+        "title": "Log In" 
+    },
+    "sesion": {
+        "logOut": "Log out"
+    },
+    "logIn": {
+        "title":"Log In",
+        "password": "Password",
+        "pass-error-msg": "Password must be at least 6 characters, contain one uppercase letter, one number, and one special character",
+        "email-error-msg": "Invalid email"
+    },
+    "message": {
+        "city-not-found": "City not found"
+    },
+    "sidebar":{
+        "city": "City",
+        "contact": "Contact"
+    },
+    "weatherDetail": {
+        "title": "Weather in"
+    },
+    "dataDetails": {
+        "current-temp": "Current Temp",
+        "humidity": "Humidity",
+        "wind-speed": "Wind Speed"
+    },
+    "contact": {
+        "title-form": "Contact us",
+        "name": "Name",
+        "birthDate": "Birth Date",
+        "city": "City",
+        "phone": "Phone",
+        "name-msg": "Name is required",
+        "birthDate-msg": "Birth Date is required",
+        "city-msg": "City is required",
+        "email-msg": "Invalid email",
+        "phone-msg": "Phone must be at least 10 digits",
+        "success-msg": "Info sent successfully"
+    }
+    
+}

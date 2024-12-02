@@ -1,0 +1,133 @@
+@use '../../styles/variables' as *;
+
+.sidebar {
+  @include flex-direction(column);
+  top: 4rem;
+  left: 0;
+  height: calc(100vh - 4rem);
+  width: 5rem;  
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: width 0.3s ease;
+  color: $dark-gray;
+
+  &.expanded {
+    width: 7rem;
+    padding: 2rem;
+    padding-left: 0.8rem;
+
+    .toggleButton{
+      align-self: flex-end;
+    }
+  }
+
+  .toggleButton {
+    top: 5.8rem;
+    left: 90%;
+    transform: translate(-50%, 0);
+    background: transparent;
+    border: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    align-self: center;
+    margin-left: 1.5rem;
+
+    .arrow {
+      display: inline-block;
+      transition: transform 0.3s, color 0.2s;
+      color: $dark-gray;
+    }
+
+    &:hover {
+      .arrow {
+        transform: translateX(3px); 
+      }
+    }
+  }
+
+  .sidebarMenu {
+    list-style: none;
+    padding: 0 0rem;
+    margin: 0;
+
+  .contact{
+    font-weight: $font-weight-bold;
+    color: $text-light;
+    
+  }
+
+    li {
+
+      p {
+        @include flex-direction(row,null,center);
+        font-weight: $font-weight-bold;
+        white-space: nowrap;
+        padding-right: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          .arrow {
+            transform: translateY(-3px); 
+          }
+        }
+
+        .arrow {
+          font-size: 1rem;
+          margin-left: 0.5rem;
+          margin-top:0.5rem;
+          transition: transform 0.3s, color 0.2s;
+        }
+      }
+
+      .subMenu {
+        list-style: none;
+        padding-left: 1.5rem;
+        margin-top: 0.5rem;
+        animation: slideDown 0.3s ease;
+
+        li {
+          margin: 0.5rem 0;
+
+          a {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btnHome{
+  @include flex-direction(row,center,center);
+  font-weight: $font-weight-bold;
+  background-color: $light-gray;
+  text-decoration: none;
+  border-radius: 8px;
+  padding:0.5rem;
+  margin-top: 1.5rem;
+
+  &:hover {
+    background-color: $text-light;
+    color: $secondary-color;
+    text-decoration: none;
+    cursor: pointer;
+  
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width:1000px ){
+  
+}

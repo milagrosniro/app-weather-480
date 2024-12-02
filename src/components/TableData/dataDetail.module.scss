@@ -1,0 +1,26 @@
+  @use '../../styles/variables' as *;
+
+  .weatherTableWrapper {
+    @include flex-direction(column);
+    flex: 2;
+    min-width: 350px;
+    margin-top: 20px;
+    gap: 1rem;
+
+    .containerInfo{
+    @include flex-direction(column, space-between);
+
+    .titleRow{
+      font-weight: $font-weight-bold-xl;
+    }
+    }
+  }
+
+  @media (max-width:1000px){
+    .weatherTableWrapper{
+
+      .containerInfo{
+        @include flex-direction(row, space-between)
+      }
+    }
+  }

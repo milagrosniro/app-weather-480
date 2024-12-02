@@ -1,0 +1,42 @@
+{
+    "form": {
+        "title": "Inicia Sesion" 
+    },
+    "sesion": {
+        "logOut": "Cerrar Sesion"
+    },
+    "logIn": {
+            "title":"Inicia Sesion",
+            "password": "Contraseña",
+            "pass-error-msg": "La contraseña debe contener el menos: 6 caracteres, una mayúscula, un número y un caracter especial",
+            "email-error-msg": "Email invalido"
+        },
+    "message": {
+        "city-not-found": "Ciudad no encontrada"
+    },
+    "sidebar":{
+        "city": "Ciudad",
+        "contact": "Contacto"
+    },
+    "weatherDetail": {
+        "title": "Clima en"
+    },
+    "dataDetails": {
+        "current-temp": "Temperatura Actual",
+        "humidity": "Humedad",
+        "wind-speed": "Velocidad de Viento"
+    },
+    "contact": {
+        "title-form": "Contactanos",
+        "name": "Nombre",
+        "birthDate": "Fecha de Nacimiento",
+        "city": "Ciudad",
+        "phone": "Telefono",
+        "name-msg": "El Nombre es requerido",
+        "birthDate-msg": "La Fecha de nacimiento es requerida",
+        "city-msg": "La ciudad es requerida",
+        "email-msg": "Email invalido",
+        "phone-msg": "El telefono debe tener al menos 10 digitos",
+        "success-msg": "Informacion enviada correctamente"
+    }
+}

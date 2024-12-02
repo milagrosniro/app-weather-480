@@ -1,0 +1,9 @@
+@use '../../styles/variables.scss' as *;
+
+.alert{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: $font-weight-bold-xl;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}

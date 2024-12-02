@@ -1,0 +1,27 @@
+// Variables
+$primary-color: black; 
+$secondary-color: white;
+$secondary-color-light: red;
+$text-light: #007bffba;
+$gray: #8f8888;
+$light-gray: #e3dbdb;
+$dark-gray: #696464;
+$body-color: #333;
+$accent-color: #07b3ca; 
+$active-color: #ef4444; 
+$font-weight-s: 500;
+$font-weight-bold: 700;
+$font-weight-bold-xl: 900;
+
+@mixin flex-direction($direction: row,$justify: null, $align: null) {
+    display: flex;
+    flex-direction: $direction;
+  
+    @if $justify != null {
+      justify-content: $justify;
+    }
+  
+    @if $align != null {
+        align-items: $align;
+    } 
+  }

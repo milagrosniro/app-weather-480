@@ -1,0 +1,76 @@
+@use '../../styles/variables' as *;
+
+.header {
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 3px 4px 16px -6px rgba(0,0,0,0.68);
+  -moz-box-shadow: 3px 4px 16px -6px rgba(0,0,0,0.68);
+  box-shadow: 3px 4px 16px -6px rgba(0,0,0,0.68);
+  border-radius: 8px;
+  width: 101vw;
+  color: $dark-gray;
+
+  &_container {
+    position: relative;
+    z-index: 10;
+    width: 100vw;
+    max-width: 95vw;
+  }
+
+  &_content {
+    @include flex-direction(row,space-between, center);
+  }
+
+  &_logo {
+    img {
+      width: 3rem; 
+      margin: 0 0 0 3rem;
+    }
+  }
+
+  &_lang {
+  @include flex-direction();
+    gap: 1rem; 
+
+    &_container{
+      @include flex-direction(row, center, center);
+        gap: 0.5rem;
+        img{
+            width: 2rem
+        }
+
+        p{
+            font-weight: $font-weight-bold;
+            text-transform: uppercase;
+            color: $dark-gray;
+            text-decoration: none;
+            // background-color: $text-light;
+            border-radius: 8px;
+            padding: 0.5rem;
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+              
+              }
+            }
+      
+    }
+  }
+
+}
+
+.logout{
+  background-color: $light-gray;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $text-light;
+    color: $secondary-color;
+    text-decoration: none;
+    cursor: pointer;
+  
+  }
+  
+}
+
+
