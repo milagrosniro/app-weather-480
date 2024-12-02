@@ -3,7 +3,8 @@ import { describe, expect, it, vi } from "vitest";
 import Home from "./Home";
 
 vi.mock("react-i18next", () => ({
-    useTranslation: () => [key => key]
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    useTranslation: () => [(key: any) => key]
   }));
   const mockStore = {
     loading: true,
