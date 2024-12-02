@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# Weather App 480 🌦️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ **Weather App 480**, es una aplicación diseñada para ofrecer pronósticos del clima. 
+  Esta aplicación brinda una experiencia fluida con funciones como soporte multilingüe y actualizaciones en tiempo real.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Funcionalidades
 
-## Expanding the ESLint configuration
+- **Datos Climáticos en Tiempo Real**: Consulta información meteorológica en vivo utilizando la biblioteca `axios`.
+- **Soporte Multilenguaje**: Internacionalización fluida con `i18next` y `react-i18next`.
+- **Validación de Formularios**: Validación integrada usando `react-hook-form` y validación de esquemas con `zod`.
+- **Gestión de Estado**: Manejo eficiente del estado con `zustand`.
+- **Interfaz Moderna**: Estilizado con `sass` para un diseño pulido.
+- **Notificaciones**: Feedback al usuario mediante `react-toastify`.
+- **Ruteo**: Navegación fluida entre vistas con `react-router-dom`.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tecnologías Utilizadas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Core
+- [React](https://reactjs.org/) para construir la interfaz de usuario.
+- [TypeScript](https://www.typescriptlang.org/) para tipado seguro y desarrollo robusto.
+- [Vite](https://vitejs.dev/) para un desarrollo rápido y herramientas de compilación.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Librerías
+- `react-icons` para iconografía elegante.
+- `uuid` para generar identificadores únicos.
+- `zustand` para gestión ligera del estado.
+- `axios` para realizar peticiones HTTP.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Testing
+- `@testing-library/react` y `vitest` para pruebas confiables.
+- `jsdom` para emular el DOM en pruebas.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Calidad de Código
+- `eslint` y `typescript-eslint` para mantener un código limpio.
+
+---
+
+## 🚀 Comenzando
+
+Sigue estos pasos para configurar el proyecto localmente:
+
+### Prerrequisitos
+- [Node.js](https://nodejs.org/) (v16 o superior)
+- npm o yarn
+
+### Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/weather-app-480.git
+   cd weather-app-480
+`` 
+2. Instala las dependencias:
+``bash
+npm install
+`` 
+3. Inicia el servidor de desarrollo::
+``bash
+npm run dev
+`` 
+
+4. Abre tu navegador y visita http://localhost:5173.

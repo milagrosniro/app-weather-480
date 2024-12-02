@@ -23,9 +23,3 @@ main{
     height: 100%;
     @include flex-direction(row, center);
 }
-
-// @media (max-width:1000px ){
-//   main{
-//     height: 100%;
-//   }
-// }
